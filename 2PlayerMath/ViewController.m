@@ -12,7 +12,7 @@
 @interface ViewController ()
 
 
-@property (weak, nonatomic) IBOutlet UILabel *Question;
+@property (weak, nonatomic) IBOutlet UILabel *question;
 @property (strong, nonatomic) GameLogic* gameLogic;
 @property (weak, nonatomic) IBOutlet UILabel *PlayerNumber;
 @property (weak, nonatomic) IBOutlet UILabel *player1Life;
@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.gameLogic = [GameLogic new];
-    self.Question.text = [self.gameLogic question];
+    self.question.text = [self.gameLogic question];
     self.PlayerNumber.text =@"Player 1:";
 }
 
@@ -53,7 +53,7 @@
         self.player2Life.text = updateLabel;
     }
     self.PlayerNumber.text = [self.gameLogic switchPlayer];
-    self.Question.text = [self.gameLogic generateQuestionAndResetPlayerInput];
+    self.question.text = [self.gameLogic generateQuestionAndResetPlayerInput];
 }
 
 @end

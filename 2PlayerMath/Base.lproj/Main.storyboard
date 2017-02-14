@@ -153,9 +153,9 @@
                     </view>
                     <connections>
                         <outlet property="PlayerNumber" destination="KZF-CQ-WUv" id="ci1-UZ-Efx"/>
-                        <outlet property="Question" destination="p0z-EZ-n1S" id="nuU-lQ-Yum"/>
                         <outlet property="player1Life" destination="I5X-zC-Scs" id="Axn-g6-enf"/>
                         <outlet property="player2Life" destination="tGg-iv-CPv" id="5Ql-QT-QHF"/>
+                        <outlet property="question" destination="p0z-EZ-n1S" id="zwK-Pd-5Sk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
